@@ -29,7 +29,24 @@ body._category {
 
 	.mw_bar1 {
 		padding: 0px 0px 10px 10px;
+
+		.mw_indicator {
+		    float: right;
+		    margin-right: 10px;
+	  	}
+
+	  	&[data-ur-state="disabled"] {
+		  > .mw_indicator {
+		    @extend .sprites-plus;
+		  }
+		}
+		&[data-ur-state="enabled"] {
+		  > .mw_indicator {
+		    @extend .sprites-minus;
+		  }
+		}
 	}
+
 }
 
 ul.mw-product-list {
