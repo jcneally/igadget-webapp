@@ -1,0 +1,64 @@
+
+.mw-product-toggler {
+	@include toggler1;
+}
+
+
+.mw_arrow {
+  @include sprites-menu_go;
+  float: right;
+}
+
+.mw-sortbox {
+	background-color: $toggler_dark;
+	margin: 5px;
+	padding: 5px;
+	color: #FFF;
+	@include rounded-corners;
+
+	select {
+		@include background(linear-gradient(middle, $toggler_dark, $toggler_light));
+	}
+}
+
+body._category {
+
+	.ProductImage {
+		float: left;
+	}
+
+	.mw_bar1 {
+		padding: 0px 0px 10px 10px;
+	}
+}
+
+ul.mw-product-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 10px;
+
+	li {
+		background-color: $product_bg;
+		width: 100%;
+		min-height: 140px;
+		margin-bottom: 10px;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.mv_product_details {
+	float: left;
+	margin-left: 20px;
+	width: 50%;
+}
+
+.mw_product {
+	padding: 10px;
+	height: 100%;
+}
+
+.color-red {
+	color: $red;
+}
