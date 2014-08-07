@@ -15,7 +15,9 @@ $$("body") {
 
 	$$("#Wrapper") {
 
-		move_here(".//*[@id='CategoryHeading']", position("top"))
+		move_here(".//*[@id='CategoryHeading']", position("top")) {
+			add_class("mw-category-heading")
+		}
 
 		$$(".Left") {
 

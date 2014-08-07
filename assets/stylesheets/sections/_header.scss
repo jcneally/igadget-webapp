@@ -4,6 +4,7 @@
 
 .mw-category-list {
   @include toggler1;
+  @include background(linear-gradient($toggler_dark 10%, shade($toggler_dark, 50%) 25%));
 }
 
 .mw-search-button {
@@ -68,4 +69,8 @@
   &[data-ur-state="enabled"] span {
     @extend .sprites-menu-on;
   }
+}
+
+.mw-category-header {
+  text-align: center;
 }

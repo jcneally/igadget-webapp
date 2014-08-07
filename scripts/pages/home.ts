@@ -14,7 +14,7 @@ $$("body") {
 	remove(".//div[contains(@class, 'QuickViewBtn')]")
 	remove(".//div[contains(@class, 'SideCart')]")
 
-	$$("h2") {
+	$(".//div[@id='Wrapper']//h2") {
 		add_class("mw-h2")
 	}
 

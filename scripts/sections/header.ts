@@ -89,6 +89,10 @@ $(".//div[@id='Header']") {
   $(".//div[@id='Menu']") {
     $("./div[contains(@class, 'CategoryList')]") {
       add_class("mw-category-list")
+
+      $("./h2") {
+        add_class("mw-category-header")
+      }
     }
   }
 

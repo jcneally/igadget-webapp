@@ -1,5 +1,6 @@
 .mw-product-toggler {
 	@include toggler1;
+	@include background(linear-gradient($toggler_dark 10px, shade($toggler_dark, 50%) 60px));
 }
 
 
@@ -12,12 +13,17 @@
 	background-color: $toggler_dark;
 	margin: 5px;
 	padding: 5px;
-	color: #FFF;
-	@include rounded-corners;
+	color: $white;
+	@include background(linear-gradient($toggler_dark 30%, shade($toggler_dark, 50%) 100%));
 
 	select {
-		@include background(linear-gradient(middle, $toggler_dark, $toggler_light));
+		width: 70%;
+		@include background(linear-gradient($toggler_dark 30%, tint($toggler_dark, 70%) 100%));
 	}
+}
+
+.mw-category-heading {
+	padding-left: 10px;
 }
 
 .mw_bar1 {

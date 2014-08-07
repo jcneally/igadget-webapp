@@ -4,12 +4,10 @@
 	color: #FFF;
 	margin: 5px;
   padding-top: 1px;
-  @include rounded-corners;
 
     ul {
-      list-style-type: none;
+      list-style-type: none;      
       background-color: $toggler_light;
-      @include border-bottom-radius(7px);
       padding: 0px 0px 5px 0px;
       border-style: solid;
       border-color: $toggler_dark;
