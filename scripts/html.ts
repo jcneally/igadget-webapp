@@ -16,6 +16,7 @@ $("/html") {
   remove_all_styles()
 
   add_assets()
+  rewrap()
 
   @import "optimize.ts"
   @import "sections/header.ts"

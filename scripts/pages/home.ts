@@ -14,6 +14,10 @@ $$("body") {
 	remove(".//div[contains(@class, 'QuickViewBtn')]")
 	remove(".//div[contains(@class, 'SideCart')]")
 
+	$$("h2") {
+		add_class("mw-h2")
+	}
+
 	# Featured Products carousel
 	$(".//ul[contains(@class, 'ProductList')]") {
 		carousel()

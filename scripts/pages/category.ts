@@ -2,20 +2,12 @@ $$("body") {
 	# Adding a class for page-specific styling
 	add_class("_category")
 
-	# Remove newsletter subscription
-	#remove(".//div[contains(@class, 'NewsletterSubscription')]")
-
-	# Remove breadcrumbs
-	#remove(".//div[contains(@class, 'Breadcrumb')]")
-
 	# Remove compare button
 	remove(".//div[contains(@class, 'CompareButton')]")
 
 	# Remove top sellers
 	remove(".//div[contains(@class, 'TopSellers')]")
 
-	# Remove new products
-	#remove(".//div[contains(@class, 'NewProducts')]")
 	cleanup()
 
 	# Remove popular products
@@ -65,6 +57,10 @@ $$("body") {
 
 			$$("strong") {
 				unwrap()
+			}
+
+			$(".//div[contains(@class, 'ProductImage')]") {
+				add_class("mw-product-img")
 			}
 
 			$(".//li") {

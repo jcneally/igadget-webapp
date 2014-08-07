@@ -85,4 +85,11 @@ $(".//div[@id='Header']") {
   	}
   }
 
+  # Add mw class to category dropdown
+  $(".//div[@id='Menu']") {
+    $("./div[contains(@class, 'CategoryList')]") {
+      add_class("mw-category-list")
+    }
+  }
+
 }

@@ -33,5 +33,5 @@
 
 @mixin rounded-corners {
 	@include border-top-radius(7px);
-    @include border-bottom-radius(7px);
+  @include border-bottom-radius(7px);
 }

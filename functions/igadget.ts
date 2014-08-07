@@ -35,12 +35,24 @@
 
 @func XMLNode.carousel() {
 	attribute("data-ur-set", "carousel")
-			attribute("data-ur-infinite", "disabled")
+	attribute("data-ur-infinite", "disabled")
 
-			inner_wrap("div", data-ur-carousel-component: "scroll_container")
+	inner_wrap("div", data-ur-carousel-component: "scroll_container")
 
-			$(".//li") {
-				attribute("data-ur-carousel-component", "item")
-				add_class("mw-carousel-item")
+	$(".//li") {
+		attribute("data-ur-carousel-component", "item")
+		add_class("mw-carousel-item")
+
+		$(".//div[contains(@class, 'ProductDetails')]") {
+			attribute("style") {
+				remove()
 			}
+		}
+	}
+}
+
+@func XMLNode.rewrap() {
+	$("//div[@id='Wrapper']") {
+		add_class("mw-wrapper")
+	}
 }

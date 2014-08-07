@@ -1,14 +1,16 @@
 $$("#Footer") {
-  insert_top("br")
-  insert("footer", "Powered by: <br />", class: "mw-footer") {
-    insert("div", class: "mv-logo sprites-logo_white")
-  }
+  add_class("mw-footer")
 
-  inner_wrap("div", class: "mw-footer-container")
+	insert_top("br")
+	insert("footer", "Powered by: <br />") {
+		insert("div", class: "mv-footer-logo sprites-logo_white")
+	}
 
-  $("(.//a)[1]") {
-  	insert_before("br")
-  }
+	inner_wrap("div", class: "mw-footer-container")
 
-  insert("br")
+	$("(.//a)[1]") {
+		insert_before("br")
+	}
+
+	insert("br")
 }
